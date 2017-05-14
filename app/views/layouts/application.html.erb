@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title><%= content_for?(:title) ? yield(:title) : "TFZ" %></title>
+      <title><%= content_for?(:title) ? yield(:title) : "TFZ" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
+      <%= stylesheet_link_tag    "application" %>
+      <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+    </head>
 
-  <body>
     <header class="sticky-shrinknav-header">
       <%= image_tag('logo.jpg', size: "200") %>
-    <ul class="menu sticky-shrinknav-menu">
-      <li><a href="#">NEWS</a></li>
-      <li><a href="#">FEATURED</a></li>
-      <li><a href="#">TRENDING</a></li>
-      <li><a href="#">VIDEOS</a></li>
-    </ul>
+      <ul class="menu sticky-shrinknav-menu">
+        <li>
+          <a href="#">NEWS</a>
+        </li>
+        <li>
+          <a href="#">FEATURED</a>
+        </li>
+        <li>
+          <a href="#">TRENDING</a>
+        </li>
+        <li>
+          <a href="#">VIDEOS</a>
+        </li>
+      </ul>
     </header>
     <hr>
-    <%= yield %>
-  </body>
-  <footer class="site-footer">
-    <div class="row medium-unstack">
-      <div class="medium-4 columns">
-        <h4 class="site-footer-name">FOLLOW US</h4>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="medium-4 columns">
-         <h4 class="site-footer-title">USEFUL LINKS</h4>
-      </div>
-      <div class="medium-4 columns">
+
+    <body>
+      <%= yield %>
+    </body>
+
+    <footer class="site-footer">
+      <div class="row medium-unstack">
+        <div class="medium-4 columns">
+          <h4 class="site-footer-name">FOLLOW US</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="medium-4 columns">
+          <h4 class="site-footer-title">USEFUL LINKS</h4>
+        </div>
+        <div class="medium-4 columns">
           <%= image_tag('footer-logo.png', size: "180") %>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 </html>

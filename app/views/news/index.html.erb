@@ -1,0 +1,5 @@
+<h2>Most recent news</h2>
+  <% @news.each do |news| %>
+  <h5><%= news.title %></h5>
+  <%= news.content %><br><br/>
+<% end %>

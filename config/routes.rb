@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :news, only: :index
 
   resources :videos, only: :index
+
+  resources :featured, only: :index
 end

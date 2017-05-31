@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'trending/index'
-
   root controller: :index, action: :index
 
-  resources :news, only: :index
+  resources :news, only: [:index, :show]
 
   resources :videos, only: :index
 

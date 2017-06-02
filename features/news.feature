@@ -3,6 +3,16 @@ Feature: News
   In order to get updates about the subject
   I would like to be presented with interesting news
 
+  Background:
+    Given the following restaurants exist
+     | title                   | content                                           |
+     | Awesome travel insights | Let me tell you about my trip to British Columbia |
+
   Scenario: I see some news posts on the page
     Given I am on the news page
     Then I should see "Most recent news"
+
+  Scenario: I see the specific news item content
+    Given I am on the news page
+    And I click "Awesome travel insights"
+    Then I should see "Let me tell you about my trip to British Columbia"

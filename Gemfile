@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'foundation-rails'
+gem 'yt', '~> 0.28.0'
 
 group :development, :test do
   gem 'pry-byebug'

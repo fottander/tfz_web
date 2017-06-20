@@ -1,0 +1,7 @@
+<h3>Create a new article</h3>
+<%= form_for @news do |f| %>
+<%= f.label :title, 'Title' %>
+<%= f.text_field :title %>
+<%= f.label :content, 'Content' %>
+<%= f.text_area :content %>
+<% end %>

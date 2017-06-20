@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root controller: :index, action: :index
 
-  resources :news, only: [:index, :show, :new]
+  resources :news, only: [:index, :show, :new, :create]
 
   resources :videos, only: :index
 

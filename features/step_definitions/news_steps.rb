@@ -11,3 +11,7 @@ Given(/^the following restaurants exist$/) do |table|
    create(:news, title: hash[:title], content: hash[:content])
   end
 end
+
+Then(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, content|
+  fill_in field, with: content
+end

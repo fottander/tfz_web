@@ -13,6 +13,10 @@ class NewsController < ApplicationController
 
   def create
     @news = News.new news_params
+    if @news.save
+      flash[:notice] = 'News article created!'
+      redirect_back(fallback_location: new_news_path)
+    end
   end
 
   private

@@ -99,6 +99,29 @@
    border-color: #0a0a0a;
 }
 
+/* NEWS ARTICLES */
+
+.article-image {
+  width: 600px;
+  height: auto;
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.article-title {
+  margin-left: 50px;
+  width: 600px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.article-content {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 50px;
+}
+
 /* NAV BAR */
 
  .sticky-shrinknav-menu {

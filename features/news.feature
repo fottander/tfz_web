@@ -16,3 +16,7 @@ Feature: News
     Given I am on the news page
     And I click "Awesome travel insights"
     Then I should see "Let me tell you about my trip to British Columbia"
+
+  Scenario: I see the specific news article with an image next to it
+    Given I am on the news page
+    Then I should see an image named "Travel"

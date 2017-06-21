@@ -18,12 +18,11 @@ Then(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, content|
   fill_in field, with: content
 end
 
-Then(/^I should see "([^"]*)" file named "([^"]*)"$/) do |news_title, file_name|
+Then(/^I should see "([^"]*)" file name "([^"]*)"$/) do |news_title, file_name|
   news = News.find_by(title: news_title)
   within '#news' do
-    within "#news-#{news.id}" do
-      expect(page).to have_content file_name
-      expect(page).to have_css "img[src*='#{image.file.url}']"
+    within ".news-#{news.id}" do
+      expect(page).to have_css "img[src*='#{news.file.url}']"
     end
   end
 end

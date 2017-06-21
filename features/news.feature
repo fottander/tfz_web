@@ -19,4 +19,4 @@ Feature: News
 
   Scenario: I see the specific news article with an image next to it
     Given I am on the news page
-    Then I should see "Awesome travel insights" file named "Agile_workflow.png"
+    Then I should see "Awesome travel insights" file name "Agile_workflow.png"

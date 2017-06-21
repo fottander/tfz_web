@@ -2,6 +2,7 @@
   <h2 class='titles'>News</h2>
   <% @news.each do |news| %>
     <div class="news-<%= news.id %>">
+      <%= image_tag news.file.url, style: 'width: 200px; height: auto' %>
       <h5><%= link_to news.title, news_path(news)%></h5>
       <%= news.content %><br><br/>
     </div>

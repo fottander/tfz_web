@@ -1,6 +1,10 @@
-<h2 class='titles'>News</h2>
-<% @news.each do |news| %>
-<h5><%= link_to news.title, news_path(news)%></h5>
-<%= news.content %><br><br/>
-<% end %>
-<%= link_to 'Create news article', new_news_path, class: 'button inc' %>
+<div id="news">
+  <h2 class='titles'>News</h2>
+  <% @news.each do |news| %>
+    <div class="news-<%= news.id %>">
+      <h5><%= link_to news.title, news_path(news)%></h5>
+      <%= news.content %><br><br/>
+    </div>
+  <% end %>
+  <%= link_to 'Create news article', new_news_path, class: 'button inc' %>
+</div>

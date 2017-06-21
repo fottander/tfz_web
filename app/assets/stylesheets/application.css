@@ -25,7 +25,15 @@
    padding-bottom: 20px;
  }
 
+.news-title {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
  .news-content {
+   font-family: 'Montserrat', sans-serif;
    margin-left: -20px;
    padding-top: 20px;
    padding-bottom: 20px;

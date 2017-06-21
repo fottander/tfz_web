@@ -8,8 +8,10 @@
               <%= image_tag news.file.url, style: 'width: 300px; height: auto' %>
             </div>
           </div>
+          <div class='news-title'>
+            <%= link_to news.title, news_path(news)%>
+          </div>
           <div class='news-content'>
-            <h5><%= link_to news.title, news_path(news)%></h5>
             <%= news.content %>
           </div>
         </div>

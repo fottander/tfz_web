@@ -10,7 +10,7 @@ Feature: News
 
   Scenario: I see some news posts on the page
     Given I am on the news page
-    Then I should see "News"
+    Then I should see "NEWS"
 
   Scenario: I see the specific news item content
     Given I am on the news page

@@ -1,9 +1,7 @@
 class News < ApplicationRecord
-  validates_presence_of :title, :content
-
-  has_attached_file :file
-                    storage: :s3,
-                    s3_credentials: Proc.new{|a| a.instance.s3_credentials }
+  has_attached_file :file,
+                      storage: :s3,
+                      s3_credentials: Proc.new{|a| a.instance.s3_credentials }
 
   validates_attachment :file,
                         content_type:
@@ -19,4 +17,6 @@ class News < ApplicationRecord
     s3_host_name: 's3-eu-west-1.amazonaws.com'
   }
   end
+
+  validates_presence_of :title, :content
 end

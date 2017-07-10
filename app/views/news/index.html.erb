@@ -2,17 +2,12 @@
   <h1 class='titles'>NEWS</h1>
     <% @news.each do |news| %>
       <div class='row'>
-        <div class="news-<%= news.id %>">
-          <div class='large-6 columns'>
-            <div class='news-image'>
-              <%= image_tag news.file.url, style: 'width: 300px; height: auto' %>
-            </div>
-          </div>
+        <div class="news-<%= news['id'] %>">
           <div class='news-title'>
-            <%= link_to news.title, news_path(news)%>
+            <%= link_to news['title'], news_path(news['id'])%>
           </div>
           <div class='news-content'>
-            <%= news.content %>
+            <%= news['content'].html_safe %>
           </div>
         </div>
       </div>

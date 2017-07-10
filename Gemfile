@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'foundation-rails'
 gem 'paperclip', '~> 5.0.0'
 gem 'aws-sdk'
+gem 'httparty'
 
 group :development, :test do
   gem 'pry-byebug'

@@ -12,7 +12,11 @@
             <%= link_to news['title'], news_path(news['id'])%>
           </div>
           <div class='news-content'>
-            <%= news['content'].html_safe %>
+            <% if news['content'].length > 200 %>
+              <%= truncate(news['content'], length: 200, :escape => false).html_safe %>
+            <% else %>
+              <%= news['content'].html_safe %>
+            <% end %>
           </div>
         </div>
       </div>

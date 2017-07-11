@@ -1,5 +1,6 @@
 <div class='article-image'>
-  <%= image_tag @news['file'] %>
+  <%= image_tag @news['file'], style: 'width: 300px; height: auto' unless @news['file'].blank? %>
+
 </div>
 <div class='article-title'>
   <h2><%= @news['title'] %></h2>

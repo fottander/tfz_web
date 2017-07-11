@@ -3,6 +3,11 @@
     <% @news.each do |news| %>
       <div class='row'>
         <div class="news-<%= news['id'] %>">
+          <div class='large-6 columns'>
+            <div class='news-image'>
+              <%= image_tag news['file'], style: 'width: 300px; height: auto' %>
+            </div>
+          </div>
           <div class='news-title'>
             <%= link_to news['title'], news_path(news['id'])%>
           </div>

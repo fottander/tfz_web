@@ -22,5 +22,7 @@ module TfzWeb
       generate.routing_specs false
       generate.controller_specs false
     end
+      config.assets.precompile += %w( java/* )
+      config.assets.precompile += %w( global.css )
   end
 end

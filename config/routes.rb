@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   resources :featured, only: :index
 
   resources :trending, only: :index
+
+  resources :riders, only: :index
 end

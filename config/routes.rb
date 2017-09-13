@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
   resources :trending, only: :index
 
-  resources :riders, only: :index
+  resources :riders, only: [:index, :show]
 end

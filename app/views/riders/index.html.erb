@@ -1,1 +1,4 @@
-<h1>Browse Riders</h1>
+<h3>BROWSE RIDERS</h3>
+<% @riders.each do |rider| %>
+  <%= link_to rider['name'], rider_path(rider['id']) %>
+<% end %>

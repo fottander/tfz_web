@@ -5,4 +5,4 @@ Feature: Riders
 
   Scenario: I see videos of a specific rider
     Given I am on the riders page
-    Then I should see "BROWSE RIDERS"
+    Then I should see "RIDERS"

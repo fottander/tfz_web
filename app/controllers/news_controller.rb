@@ -14,4 +14,7 @@ class NewsController < ApplicationController
   def set_news
     @news = News.find(params[:id])
   end
+  def show
+    @news = News.find(params[:id])
+  end
 end

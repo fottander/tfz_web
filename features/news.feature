@@ -4,7 +4,7 @@ Feature: News
   I would like to be presented with interesting news
 
   Background:
-    Given the following restaurants exist
+    Given the following news exist
      | title                   | content                                           |
      | Awesome travel insights | Let me tell you about my trip to British Columbia |
 
